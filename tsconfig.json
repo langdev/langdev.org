@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "outFile": "static/main.js",
+    "sourceMap": true,
+    "strict": true
+  },
+  "files": [
+    "static/main.ts"
+  ]
+}
