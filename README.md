@@ -2,7 +2,8 @@ langdev.com
 ========
 
 ```bash
-npm i
-npx tsc
+yarn
+yarn tsc
+
 open index.html
 ```
