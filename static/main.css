@@ -1,4 +1,3 @@
-@import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
 /*
@@ -554,7 +553,6 @@ input, select, textarea {
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
