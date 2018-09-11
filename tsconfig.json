@@ -5,6 +5,6 @@
     "strict": true
   },
   "files": [
-    "static/main.ts"
+    "src/main.ts"
   ]
 }
