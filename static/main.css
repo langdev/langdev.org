@@ -1,6 +1,26 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
-html,body,div,object,h1,h2,h3,h4,h5,h6,p,a,s,var,u,i,center,ul,li,footer,header {
+html,
+body,
+div,
+object,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+s,
+var,
+u,
+i,
+center,
+ul,
+li,
+footer,
+header {
   margin: 0;
   padding: 0;
   border: 0;
@@ -9,7 +29,8 @@ html,body,div,object,h1,h2,h3,h4,h5,h6,p,a,s,var,u,i,center,ul,li,footer,header 
   vertical-align: baseline;
 }
 
-footer,header {
+footer,
+header {
   display: block;
 }
 
@@ -36,7 +57,8 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  html,  body {
+  html,
+  body {
     min-width: 320px;
   }
 }
@@ -45,18 +67,22 @@ html {
   box-sizing: border-box;
 }
 
-*,*:before,*:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-html,body {
+html,
+body {
   height: 100%;
   overflow-x: hidden;
   width: 100%;
 }
 
 @media screen and (max-height: 640px) {
-  html,  body {
+  html,
+  body {
     height: auto;
     min-height: 100%;
   }
@@ -79,7 +105,9 @@ body {
   padding: 6em 4em 4em 4em;
 }
 
-body.is-preload *,body.is-preload *:before,body.is-preload *:after {
+body.is-preload *,
+body.is-preload *:before,
+body.is-preload *:after {
   -moz-animation: none !important;
   -webkit-animation: none !important;
   -ms-animation: none !important;
@@ -255,7 +283,7 @@ body.is-preload #bg {
 
 body {
   color: rgba(255, 255, 255, 0.75);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16pt;
   font-weight: 400;
   letter-spacing: -0.01em;
@@ -316,14 +344,24 @@ p {
   margin: 0 0 2em 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #fff;
   font-weight: 700;
   line-height: 1em;
   margin: 0 0 1em 0;
 }
 
-h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
   color: inherit;
   text-decoration: none;
 }
@@ -378,7 +416,9 @@ header h3 + p {
   line-height: 1.5em;
 }
 
-header h4 + p,header h5 + p,header h6 + p {
+header h4 + p,
+header h5 + p,
+header h6 + p {
   font-size: 0.9em;
   margin-top: -0.6em;
   line-height: 1.5em;
@@ -546,22 +586,22 @@ ul li {
 
 ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 :-moz-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 ::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 /* Button */
@@ -608,7 +648,7 @@ footer {
   -ms-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
   bottom: 4em;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.75);
   left: 4em;
   opacity: 0.5;
   position: absolute;
