@@ -6,6 +6,10 @@
 <style>
 * { box-sizing: border-box; }
 
+html {
+  font-size: min(2.3vh, 2vw);
+}
+
 body {
   background: black;
 
@@ -33,6 +37,39 @@ body {
   overflow-wrap: break-word;
 }
 
+@keyframes bg {
+  00.000% { background-position: -40px; opacity: 0; }
+  08.333% { opacity: 0.4; }
+  33.333% { opacity: 0.4; }
+  41.666% { background-position: +40px; opacity: 0; }
+  100%    { background-position: +40px; opacity: 0; }
+}
+#bg1, #bg2, #bg3 {
+  position: fixed;
+  margin: -40px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  animation: 15s linear 0s infinite normal both running bg;
+}
+#bg1 {
+  background-image: url(static/bg01.jpg);
+}
+#bg2 {
+  background-image: url(static/bg02.jpg);
+  animation-delay: 5s;
+}
+#bg3 {
+  background-image: url(static/bg03.jpg);
+  animation-delay: 10s;
+}
+
 h1 { grid-area: title; margin: 0; letter-spacing: -1pt; }
 #quote { grid-area: quote; opacity: 0.5; white-space: pre-wrap; }
 #desc { grid-area: desc; margin-bottom: 3rem; }
@@ -45,6 +82,10 @@ svg {
 }
 svg:hover:hover { fill: rgb(255, 248, 211); }
 </style>
+
+<div id=bg1></div>
+<div id=bg2></div>
+<div id=bg3></div>
 
 <h1>LangDev</h1>
 <div id=quote>
