@@ -44,7 +44,7 @@ body {
   41.666% { background-position: +40px; opacity: 0; }
   100%    { background-position: +40px; opacity: 0; }
 }
-#bg1, #bg2, #bg3 {
+#bg0, #bg1, #bg2 {
   position: fixed;
   margin: -40px;
   left: 0;
@@ -58,15 +58,15 @@ body {
 
   animation: 15s linear 0s infinite normal both running bg;
 }
-#bg1 {
-  background-image: url(static/bg01.jpg);
+#bg0 {
+  background-image: url(bg0.jpg);
 }
-#bg2 {
-  background-image: url(static/bg02.jpg);
+#bg1 {
+  background-image: url(bg1.jpg);
   animation-delay: 5s;
 }
-#bg3 {
-  background-image: url(static/bg03.jpg);
+#bg2 {
+  background-image: url(bg2.jpg);
   animation-delay: 10s;
 }
 
@@ -83,9 +83,9 @@ svg {
 svg:hover:hover { fill: rgb(255, 248, 211); }
 </style>
 
+<div id=bg0></div>
 <div id=bg1></div>
 <div id=bg2></div>
-<div id=bg3></div>
 
 <h1>LangDev</h1>
 <div id=quote>
