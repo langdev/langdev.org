@@ -2,16 +2,6 @@
 ========
 무언가가 일어나는 중인 커뮤니티의 웹페이지.
 
-```bash
-# Install dependencies
-yarn
-# Build website
-yarn tsc
-
-# Serve it to http://localhost:8000
-ruby -run -ehttpd . -p8000
-```
-
 &nbsp;
 
 --------

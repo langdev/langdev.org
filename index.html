@@ -1,45 +1,63 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>LangDev</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/static/main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
-  <link rel="icon" href="/static/logo.svg" type="image/svg+xml">
-  <link rel="icon" href="/static/logo-512.png" type="image/png">
-</head>
-<body class="is-preload">
+<!doctype html>
+<meta charset=UTF-8>
+<title>LangDev</title>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link rel=icon type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZwpoZWlnaHQ9IjUxMiIKd2lkdGg9IjUxMiIKeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgp4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50CmlkPSJhIj48c3RvcApvZmZzZXQ9IjAiCnN0b3AtY29sb3I9IiMxMzQxMWQiLz48c3RvcApvZmZzZXQ9IjEiCnN0b3AtY29sb3I9IiMzN2IyNGQiLz48L2xpbmVhckdyYWRpZW50PjxjaXJjbGUKY3g9IjI1NiIKY3k9IjI1NiIKZmlsbD0idXJsKCNhKSIKcj0iMjU2Igp0cmFuc2Zvcm09Im1hdHJpeCgwCjEKLTEKMAo1MTIKMCkiLz48ZwpmaWxsPSIjZmZmIj48cGF0aApkPSJtNDE0CjE1My4yYy04LjctMTAtMjAuNC0xNS4xLTM1LTE1LjRoLTkxbC00MS42CjIzNi40aDkxYzE0LjctLjMKMjguMS01LjQKNDAuMy0xNS4zaC4xdi0uMWMxMi4xLTEwCjE5LjYtMjEuOQoyMi40LTM1LjhsMjMuNi0xMzMuOWMyLjItMTQtMS4xLTI2LTkuOC0zNS45em0tNDIuOAoyNGMzLjYuMQo2LjUKMS40CjguNwozLjkKMi4xCjIuNAoyLjkKNS40CjIuNAo4LjlsLTIzLjMKMTMyLjFjLS43CjMuNC0yLjYKNi40LTUuNgo4LjktMy4xCjIuNC02LjQKMy43LTEwCjMuOGgtNDguN2wyNy43LTE1Ny42eiIvPjxwYXRoCmQ9Im0yNDMKMzM0LjhoLTEwMy41bDM0LjctMTk3aC00MS40bC00MS42CjIzNi40aDE0NC44eiIvPjwvZz48L3N2Zz4=">
+<style>
+* { box-sizing: border-box; }
 
+body {
+  background: black;
 
-<!-- Header -->
-<header>
-  <h1>LangDev</h1>
-  <p>
-    “차세대 표준 프로토콜 HTTP 1.1”<br>
-    “<@Moonphone_> 루아믿고 천국가세요”
-  </p>
-  <p>무언가 엄청난 일이 일어나고 있는 커뮤니티.</p>
-</header>
+  /* Layout */
+  margin: 0;
+  padding: 4rem;
+  min-height: 100vh;
 
-<!-- Footer -->
-<footer>
-  <ul class="icons">
-    <li><a class="fab fa-discord" href="https://discord.gg/AdKzZ7u"></a></li>
-    <li><a class="fab fa-slack" href="https://join.slack.com/t/langdevchat/shared_invite/zt-56vx7q9f-C_PftiIYR3YjEAKdoH~wAQ"></a></li>
-    <li><a class="fab fa-github" href="https://github.com/langdev"></a></li>
-  </ul>
-  <div class="copyright">
-    Credits: <a href="https://html5up.net">HTML5 UP</a>
-  </div>
-</footer>
+  /* Grid */
+  display: grid;
+  grid:
+    'title title title' auto
+    'quote quote quote' auto
+    'desc  desc  desc ' auto
+    '.     .     .    ' auto
+    / 8rem 8rem 1fr;
+  place-content: center start;
+  gap: 2rem;
 
-<div id=bg></div>
+  /* Typography */
+  color: white;
+  font-family: sans-serif;
+  font-size: 2rem;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
 
-<!-- Scripts -->
-<script src="/static/main.js"></script>
+h1 { grid-area: title; margin: 0; letter-spacing: -1pt; }
+#quote { grid-area: quote; opacity: 0.5; white-space: pre-wrap; }
+#desc { grid-area: desc; margin-bottom: 3rem; }
+a { place-self: start; }
 
+svg {
+  height: 6rem;
+  fill: rgba(255, 255, 255, 0.6);
+  transition: fill 0.35s;
+}
+svg:hover:hover { fill: rgb(255, 248, 211); }
+</style>
 
-</body>
-</html>
+<h1>LangDev</h1>
+<div id=quote>
+“차세대 표준 프로토콜 HTTP 1.1
+“&lt;@Moonphone_&gt; 루아믿고 천국가세요”
+</div>
+<div id=desc>무언가 엄청난 일이 일어나고 있는 커뮤니티.</div>
+<a href="https://discord.gg/AdKzZ7u">
+  <svg viewBox="0 0 24 24"><path d="m20.222 0c1.406 0 2.54 1.137 2.607 2.475v21.525l-2.677-2.273-1.47-1.338-1.604-1.398.67 2.205h-14.038c-1.402 0-2.54-1.065-2.54-2.476v-16.24c0-1.338 1.14-2.477 2.545-2.477h16.5zm-6.118 5.683h-.03l-.202.2c2.073.6 3.076 1.537 3.076 1.537-1.336-.668-2.54-1.002-3.744-1.137-.87-.135-1.74-.064-2.475 0h-.2c-.47 0-1.47.2-2.81.735-.467.203-.735.336-.735.336s1.002-1.002 3.21-1.537l-.135-.135s-1.672-.064-3.477 1.27c0 0-1.805 3.144-1.805 7.02 0 0 1 1.74 3.743 1.806 0 0 .4-.533.805-1.002-1.54-.468-2.14-1.404-2.14-1.404s.134.066.335.2h.06c.03 0 .044.015.06.03v.006c.016.016.03.03.06.03.33.136.66.27.93.4.466.202 1.065.403 1.8.536.93.135 1.996.2 3.21 0 .6-.135 1.2-.267 1.8-.535.39-.2.87-.4 1.397-.737 0 0-.6.936-2.205 1.404.33.466.795 1 .795 1 2.744-.06 3.81-1.8 3.87-1.726 0-3.87-1.815-7.02-1.815-7.02-1.635-1.214-3.165-1.26-3.435-1.26l.056-.02zm.168 4.413c.703 0 1.27.6 1.27 1.335 0 .74-.57 1.34-1.27 1.34s-1.27-.6-1.27-1.334c.002-.74.573-1.338 1.27-1.338zm-4.543 0c.7 0 1.266.6 1.266 1.335 0 .74-.57 1.34-1.27 1.34s-1.27-.6-1.27-1.334c0-.74.57-1.338 1.27-1.338z"/></svg>
+</a>
+<a href="https://join.slack.com/t/langdevchat/shared_invite/zt-56vx7q9f-C_PftiIYR3YjEAKdoH~wAQ">
+  <svg viewBox="0 0 24 24"><path d="m5.042 15.165a2.528 2.528 0 0 1 -2.52 2.523 2.528 2.528 0 0 1 -2.522-2.523 2.527 2.527 0 0 1 2.522-2.52h2.52zm1.271 0a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313a2.528 2.528 0 0 1 -2.521 2.522 2.528 2.528 0 0 1 -2.521-2.522zm2.521-10.123a2.528 2.528 0 0 1 -2.521-2.52 2.528 2.528 0 0 1 2.521-2.522 2.528 2.528 0 0 1 2.521 2.522v2.52zm0 1.271a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1 -2.521 2.521h-6.312a2.528 2.528 0 0 1 -2.522-2.521 2.528 2.528 0 0 1 2.522-2.521zm10.122 2.521a2.528 2.528 0 0 1 2.522-2.521 2.528 2.528 0 0 1 2.522 2.521 2.528 2.528 0 0 1 -2.522 2.521h-2.522zm-1.268 0a2.528 2.528 0 0 1 -2.523 2.521 2.527 2.527 0 0 1 -2.52-2.521v-6.312a2.527 2.527 0 0 1 2.52-2.522 2.528 2.528 0 0 1 2.523 2.522zm-2.523 10.122a2.528 2.528 0 0 1 2.523 2.522 2.528 2.528 0 0 1 -2.523 2.522 2.527 2.527 0 0 1 -2.52-2.522v-2.522zm0-1.268a2.527 2.527 0 0 1 -2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313a2.527 2.527 0 0 1 2.522 2.52 2.528 2.528 0 0 1 -2.522 2.523z"/></svg>
+</a>
+<a href="https://github.com/langdev">
+  <svg viewBox="0 0 24 24"><path d="m12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57 4.801-1.574 8.236-6.074 8.236-11.369 0-6.627-5.373-12-12-12"/></svg>
+</a>
