@@ -21,7 +21,7 @@ images[pos].classList.add('visible')
 images[pos].classList.add('top')
 
 const delay = 6000
-setInterval(_ => {
+setInterval(() => {
   const lastPos = pos
   pos = (pos + 1) % images.length
 
@@ -31,12 +31,12 @@ setInterval(_ => {
   images[pos].classList.add('top')
 
   // Hide last image after a short delay.
-  setTimeout(_ => {
+  setTimeout(() => {
     images[lastPos].classList.remove('visible')
   }, delay / 2)
 }, delay)
 
 // Play initial animations on page load.
-setTimeout(_ => {
+setTimeout(() => {
   document.body.classList.remove('is-preload')
 }, 100)
