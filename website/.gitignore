@@ -12,6 +12,3 @@
 
 # gatsby-plugin-typegen
 /src/__generated__/
-
-# dotenv
-.env/.env*.local
