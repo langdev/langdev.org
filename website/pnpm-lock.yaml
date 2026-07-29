@@ -33,9 +33,6 @@ importers:
       gatsby:
         specifier: ^3.15.0
         version: 3.15.0(@types/node@15.14.9)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.24))(csso@4.2.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(supports-color@8.1.1)(typescript@4.9.5)
-      gatsby-plugin-catch-links:
-        specifier: ^3.15.0
-        version: 3.15.0(gatsby@3.15.0(@types/node@15.14.9)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.24))(csso@4.2.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(supports-color@8.1.1)(typescript@4.9.5))
       gatsby-plugin-react-helmet:
         specifier: ^4.15.0
         version: 4.15.0(gatsby@3.15.0(@types/node@15.14.9)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.24))(csso@4.2.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(supports-color@8.1.1)(typescript@4.9.5))(react-helmet@6.1.0(react@17.0.2))
@@ -45,9 +42,6 @@ importers:
       gatsby-plugin-typegen:
         specifier: ^2.2.4
         version: 2.2.4(gatsby@3.15.0(@types/node@15.14.9)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.24))(csso@4.2.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(supports-color@8.1.1)(typescript@4.9.5))(graphql@15.10.2)(react@17.0.2)(supports-color@8.1.1)
-      gatsby-plugin-typescript:
-        specifier: ^3.15.0
-        version: 3.15.0(gatsby@3.15.0(@types/node@15.14.9)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.24))(csso@4.2.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(supports-color@8.1.1)(typescript@4.9.5))(supports-color@8.1.1)
       gatsby-source-filesystem:
         specifier: ^3.15.0
         version: 3.15.0(gatsby@3.15.0(@types/node@15.14.9)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.24))(csso@4.2.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(supports-color@8.1.1)(typescript@4.9.5))
@@ -3143,12 +3137,6 @@ packages:
   gatsby-page-utils@1.15.0:
     resolution: {integrity: sha512-Nj5lcMJaACCaWVgRc6T45U7KxhqEPpWZo/IlOaCdX2pWjK/5oWI3hVtfukfFpDRunYtIdw2Vl8bicLgU+viAWA==}
     engines: {node: '>=12.13.0'}
-
-  gatsby-plugin-catch-links@3.15.0:
-    resolution: {integrity: sha512-vfoYWfqMjz7ZaKr4C2Xnv9R8JptVubHldd1eWBTDTIAtkFbk+3jhxzSASgf9hGZCzbZHDNTBXHCnwXw1pOaaBQ==}
-    engines: {node: '>=12.13.0'}
-    peerDependencies:
-      gatsby: ^3.0.0-next.0
 
   gatsby-plugin-page-creator@3.15.0:
     resolution: {integrity: sha512-N4jxcdPUHsv32XdFmwv2oe5w6DWCG5oJsbudVL0g+gN6uc2PRSsPjDIS4kFxCwI25c2m2L/2+cL7ZCdMsMxG3Q==}
@@ -10871,12 +10859,6 @@ snapshots:
       glob: 7.2.3
       lodash: 4.18.1
       micromatch: 4.0.8
-
-  gatsby-plugin-catch-links@3.15.0(gatsby@3.15.0(@types/node@15.14.9)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.24))(csso@4.2.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(supports-color@8.1.1)(typescript@4.9.5)):
-    dependencies:
-      '@babel/runtime': 7.29.7
-      escape-string-regexp: 1.0.5
-      gatsby: 3.15.0(@types/node@15.14.9)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.24))(csso@4.2.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(supports-color@8.1.1)(typescript@4.9.5)
 
   gatsby-plugin-page-creator@3.15.0(gatsby@3.15.0(@types/node@15.14.9)(babel-eslint@10.1.0(eslint@7.32.0(supports-color@8.1.1))(supports-color@8.1.1))(cssnano@5.1.15(postcss@8.5.24))(csso@4.2.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(supports-color@8.1.1)(typescript@4.9.5))(graphql@15.10.2)(supports-color@8.1.1):
     dependencies:
