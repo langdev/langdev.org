@@ -5,7 +5,7 @@
     "lib": ["esnext", "dom", "dom.iterable"],
     "noEmit": true,
     "jsx": "preserve",
-    "types": ["node"],
+    "types": [],
 
     // Strict Typecheck
     "strict": true,
