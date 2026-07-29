@@ -31,5 +31,6 @@
   "prettier": {
     "singleQuote": true,
     "semi": false
-  }
+  },
+  "packageManager": "yarn@4.18.0"
 }
