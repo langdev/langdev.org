@@ -7,6 +7,11 @@
 [Node.js]와 [Yarn]을 준비합니다.
 
 ```bash
+cd website
+
+# TODO: Fix this
+export NODE_OPTIONS=--openssl-legacy-provider
+
 # 라이브러리 설치
 yarn
 # 개발서버 띄우기, http://localhost:8000 를 확인하세요
