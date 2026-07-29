@@ -2,7 +2,7 @@
 shamefullyHoist: true
 allowBuilds:
   core-js: true
-  core-js-pure: true
+  es5-ext: true
   gatsby: true
   gatsby-cli: true
   gatsby-telemetry: true

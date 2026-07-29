@@ -6,9 +6,6 @@
 ```bash
 cd website
 
-# TODO: Fix this
-export NODE_OPTIONS=--openssl-legacy-provider
-
 pnpm i
 pnpm dev
 # See http://localhost:8000
