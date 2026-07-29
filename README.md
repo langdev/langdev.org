@@ -14,7 +14,6 @@ pnpm dev
 # See http://localhost:8000
 
 pnpm test
-pnpm fmt
 ```
 
 [Langdev Team Blog]: https://blog.langdev.org
