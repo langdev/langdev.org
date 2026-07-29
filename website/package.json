@@ -9,7 +9,7 @@
     "@types/react": "^17.0.93",
     "@types/react-dom": "^17.0.26",
     "@types/react-helmet": "^6.1.11",
-    "gatsby": "^3.15.0",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-react-helmet": "^4.15.0",
     "gatsby-plugin-sitemap": "^4.11.0",
     "gatsby-plugin-typegen": "^2.2.4",
