@@ -1,0 +1,10 @@
+# TODO: Fix these and remove belows
+shamefullyHoist: true
+allowBuilds:
+  core-js: true
+  core-js-pure: true
+  gatsby: true
+  gatsby-cli: true
+  gatsby-telemetry: true
+  lmdb: true
+  msgpackr-extract: true
