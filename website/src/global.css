@@ -1,11 +1,47 @@
+:root {
+  color-scheme: light;
+  --blog-bg: #fff;
+  --blog-fg: #1f2328;
+  --blog-muted-fg: #59636e;
+  --blog-accent-fg: #0969da;
+  --blog-focus-outline: #0969da;
+}
+
 * {
   box-sizing: border-box;
 }
 
+html {
+  background-color: var(--blog-bg);
+}
+
 body {
   margin: 0;
+  min-height: 100vh;
+  color: var(--blog-fg);
+  background-color: var(--blog-bg);
 
   /* Word breaks shouldn't be applied to CJK texts */
   word-break: keep-all;
   overflow-wrap: break-word;
+}
+
+a {
+  color: var(--blog-accent-fg);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--blog-focus-outline);
+  outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --blog-bg: #0d1117;
+    --blog-fg: #f0f6fc;
+    --blog-muted-fg: #9198a1;
+    --blog-accent-fg: #4493f8;
+    --blog-focus-outline: #1f6feb;
+  }
 }

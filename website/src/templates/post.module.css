@@ -7,6 +7,7 @@
 
 .info {
   margin-bottom: 2em;
+  color: var(--blog-muted-fg);
   text-align: right;
 }
 
