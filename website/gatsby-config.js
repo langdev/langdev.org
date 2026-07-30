@@ -2,16 +2,19 @@ module.exports = {
   siteMetadata: {
     siteUrl: 'https://blog.langdev.org',
   },
+  trailingSlash: 'never',
+  jsxRuntime: 'automatic',
+  graphqlTypegen: {
+    generateOnBuild: true,
+  },
   plugins: [
     {
-      resolve: 'gatsby-plugin-typegen',
+      resolve: 'gatsby-plugin-sitemap',
       options: {
-        outputPath: 'src/__generated__/gatsby-types.d.ts',
+        // Preserve the URL used by the previous plugin version.
+        output: '/sitemap',
       },
     },
-    'gatsby-plugin-typescript',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -20,6 +23,5 @@ module.exports = {
       },
     },
     'gatsby-transformer-remark',
-    'gatsby-plugin-catch-links',
   ],
 }

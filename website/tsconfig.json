@@ -4,7 +4,7 @@
     "module": "esnext",
     "lib": ["esnext", "dom", "dom.iterable"],
     "noEmit": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "types": [],
 
     // Strict Typecheck
@@ -16,7 +16,7 @@
 
     // Module
     "esModuleInterop": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true,
 

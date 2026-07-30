@@ -4,5 +4,5 @@
 /public/
 /.cache/
 
-# gatsby-plugin-typegen
-/src/__generated__/
+# Gatsby GraphQL typegen
+/src/gatsby-types.d.ts

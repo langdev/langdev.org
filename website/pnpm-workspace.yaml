@@ -1,10 +1,44 @@
-# TODO: Fix these and remove belows
-shamefullyHoist: true
 allowBuilds:
+  '@parcel/watcher': true
+  '@swc/core': true
   core-js: true
+  core-js-pure: true
   es5-ext: true
   gatsby: true
   gatsby-cli: true
   gatsby-telemetry: true
   lmdb: true
   msgpackr-extract: true
+  sharp: true
+
+# Gatsby pins several vulnerable build-time dependencies below their patched
+# versions. Keep overrides scoped to the parent that needs them where possible.
+overrides:
+  'recursive-readdir>minimatch': 3.1.5
+  'optionator>word-wrap': 1.2.5
+  'gatsby>cookie': 0.7.2
+  'external-editor>tmp': 0.2.7
+  'gatsby>webpack': 5.104.1
+  'css-minimizer-webpack-plugin>serialize-javascript': 7.0.5
+  'flat-cache>flatted': 3.4.2
+  'gatsby>path-to-regexp': 0.1.13
+  'lodash@>=4.0.0 <5.0.0': 4.18.1
+  'gatsby-core-utils>file-type': 21.3.2
+  'gatsby-source-filesystem>file-type': 21.3.2
+  '@ardatan/relay-compiler>immutable': 4.3.9
+  'gatsby>uuid': 11.1.1
+  'gatsby-sharp>sharp': 0.35.0
+  brace-expansion: 5.0.8
+
+patchedDependencies:
+  minimatch@3.1.5: patches/minimatch@3.1.5.patch
+
+# Gatsby 5.16 supports React 19, but a few bundled packages still publish stale
+# peer ranges. Partial hydration (which uses react-server-dom-webpack) is off.
+peerDependencyRules:
+  allowedVersions:
+    '@gatsbyjs/reach-router>react': '19'
+    '@gatsbyjs/reach-router>react-dom': '19'
+    'react-server-dom-webpack>react': '19'
+    'eslint-config-react-app>@typescript-eslint/eslint-plugin': '5'
+    'eslint-config-react-app>@typescript-eslint/parser': '5'
