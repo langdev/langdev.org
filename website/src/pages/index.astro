@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content'
+import BaseLayout from '../layouts/BaseLayout.astro'
+
+const posts = (await getCollection('posts')).sort((a, b) =>
+  a.data.date.localeCompare(b.data.date),
+)
+---
+
+<BaseLayout title="LangDev Team Blog" canonical="https://blog.langdev.org/">
+  <main>
+    <h1>LangDev Blog</h1>
+    <ul>
+      {posts.map(({ data }) => (
+        <li>
+          <a href={data.path}>{data.title} - {data.authors}</a>
+        </li>
+      ))}
+    </ul>
+  </main>
+</BaseLayout>
+
+<style>
+  main {
+    max-width: 1200px;
+    padding: 150px 10px 100px;
+    margin: 0 auto;
+    font-family: sans-serif;
+  }
+</style>

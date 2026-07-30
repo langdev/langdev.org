@@ -1,8 +1,3 @@
 /node_modules/
-
-# Gatsby
-/public/
-/.cache/
-
-# Gatsby GraphQL typegen
-/src/gatsby-types.d.ts
+/dist/
+/.astro/

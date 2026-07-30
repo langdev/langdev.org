@@ -8,7 +8,7 @@ cd website
 
 pnpm i
 pnpm dev
-# See http://localhost:8000
+# See http://localhost:4321
 
 pnpm test
 ```

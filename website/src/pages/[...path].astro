@@ -1,0 +1,53 @@
+---
+import { getCollection, render } from 'astro:content'
+import 'github-markdown-css/github-markdown.css'
+
+import BaseLayout from '../layouts/BaseLayout.astro'
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts')
+
+  return posts.map((post) => ({
+    params: { path: post.data.path.replace(/^\/+|\/+$/g, '') },
+    props: { post },
+  }))
+}
+
+const { post } = Astro.props
+const { Content } = await render(post)
+---
+
+<BaseLayout title={post.data.title}>
+  <main>
+    <h1>{post.data.title}</h1>
+    <p class="info">
+      <time datetime={post.data.date}>{post.data.date}</time>, by <b>{post.data.authors}</b>
+    </p>
+    <article class="markdown-body">
+      <Content />
+    </article>
+    <footer>
+      <a href="/">목록으로 돌아가기</a>
+    </footer>
+  </main>
+</BaseLayout>
+
+<style>
+  main {
+    max-width: 1200px;
+    padding: 50px 10px 100px;
+    margin: 0 auto;
+    font-family: sans-serif;
+  }
+
+  .info {
+    margin-bottom: 2em;
+    color: var(--blog-muted-fg);
+    text-align: right;
+  }
+
+  footer {
+    margin-top: 2em;
+    text-align: right;
+  }
+</style>

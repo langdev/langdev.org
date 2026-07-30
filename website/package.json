@@ -1,23 +1,15 @@
 {
-  "name": "blog",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "gatsby develop",
-    "build": "gatsby build && tsc",
-    "test": "tsc"
-  },
-  "devDependencies": {
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
-    "gatsby": "^5.16.1",
-    "gatsby-plugin-sitemap": "^6.16.0",
-    "gatsby-source-filesystem": "^5.16.0",
-    "gatsby-transformer-remark": "^6.16.0",
-    "typescript": "^7.0.2"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "astro build"
   },
   "dependencies": {
-    "github-markdown-css": "^5.9.0",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "astro": "7.1.5",
+    "github-markdown-css": "^5.9.0"
   },
   "packageManager": "pnpm@11.17.0"
 }

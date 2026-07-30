@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://blog.langdev.org/sitemap/sitemap-index.xml

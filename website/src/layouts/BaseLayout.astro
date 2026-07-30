@@ -1,0 +1,22 @@
+---
+import '../global.css'
+
+const {
+  title,
+  canonical = Astro.site && new URL(Astro.url.pathname, Astro.site),
+} = Astro.props
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    {canonical && <link rel="canonical" href={canonical} />}
+    <link rel="icon" href="/static/logo.svg" type="image/svg+xml" sizes="any" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
