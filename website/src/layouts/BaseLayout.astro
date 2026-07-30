@@ -1,7 +1,7 @@
 ---
 import '../global.css'
 
-const { title } = Astro.props
+const { title, viewport = 'width=device-width' } = Astro.props
 const canonical = new URL(Astro.url.pathname, Astro.site)
 ---
 
@@ -9,7 +9,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site)
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content={viewport} />
     <title>{title}</title>
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/static/logo.svg" type="image/svg+xml" sizes="any" />
