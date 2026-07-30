@@ -1,6 +1,8 @@
-[Langdev Team Blog]
+[blog.langdev.org]
 ========
-[`posts/`] 디렉토리에 `YYYY-MM-DD.md` 형식의 마크다운 파일을 만들고 푸쉬하면,
+무언가가 일어나는 중인 커뮤니티의 웹페이지.
+
+[`posts/`] 디렉토리에 `YYYY-MM-DD.md` 형식의 마크다운 파일을 만들고 푸시하면,
 자동으로 새 글이 [blog.langdev.org]에 배포됩니다.
 
 ```bash
@@ -13,6 +15,14 @@ pnpm dev
 pnpm build
 ```
 
-[Langdev Team Blog]: https://blog.langdev.org
-[`posts/`]: posts/
+&nbsp;
+
+--------
+
+*blog.langdev.org* is primarily distributed under the terms of the [GNU Affero
+General Public License v3.0] or any later version. See [COPYRIGHT] for details.
+
 [blog.langdev.org]: https://blog.langdev.org
+[`posts/`]: posts/
+[GNU Affero General Public License v3.0]: LICENSE
+[COPYRIGHT]: COPYRIGHT
