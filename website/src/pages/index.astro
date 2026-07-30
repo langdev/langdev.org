@@ -47,6 +47,11 @@ const posts = (await getCollection('posts')).sort((a, b) =>
 <style is:global>
   html {
     color-scheme: light;
+    --index-bg: #fff9f0;
+    --index-fg: #353535;
+    --index-muted-fg: #333;
+    --index-link-fg: #0000ee;
+    --index-visited-fg: #551a8b;
     font-size: 20pt;
     font-family: sans-serif;
     word-break: keep-all;
@@ -148,8 +153,8 @@ const posts = (await getCollection('posts')).sort((a, b) =>
 
   main {
     justify-self: stretch;
-    color: #353535;
-    background: #fff9f0;
+    color: var(--index-fg);
+    background: var(--index-bg);
   }
 
   article {
@@ -166,15 +171,26 @@ const posts = (await getCollection('posts')).sort((a, b) =>
   }
 
   article small {
-    color: #333;
+    color: var(--index-muted-fg);
     font-size: 0.6em;
   }
 
   article a:link {
-    color: #0000ee;
+    color: var(--index-link-fg);
   }
 
   article a:visited {
-    color: #551a8b;
+    color: var(--index-visited-fg);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark;
+      --index-bg: #0d1117;
+      --index-fg: #f0f6fc;
+      --index-muted-fg: #9198a1;
+      --index-link-fg: #4493f8;
+      --index-visited-fg: #bc8cff;
+    }
   }
 </style>
