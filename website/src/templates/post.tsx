@@ -37,7 +37,6 @@ export const pageQuery = graphql`
 export const Head: HeadFC<Queries.PostPageQuery> = ({ data }) => (
   <>
     <title>{data.markdownRemark?.frontmatter?.title}</title>
-    <link rel="icon" href="/static/logo.svg" type="image/svg+xml" />
-    <link rel="icon" href="/static/logo-512.png" type="image/png" />
+    <link rel="icon" href="/static/logo.svg" type="image/svg+xml" sizes="any" />
   </>
 )

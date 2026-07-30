@@ -45,7 +45,6 @@ export const Head: HeadFC<Queries.IndexPageQuery> = () => (
   <>
     <title>LangDev Team Blog</title>
     <link rel="canonical" href="https://blog.langdev.org/" />
-    <link rel="icon" href="/static/logo.svg" type="image/svg+xml" />
-    <link rel="icon" href="/static/logo-512.png" type="image/png" />
+    <link rel="icon" href="/static/logo.svg" type="image/svg+xml" sizes="any" />
   </>
 )
