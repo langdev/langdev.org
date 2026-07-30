@@ -10,7 +10,7 @@ pnpm i
 pnpm dev
 # See http://localhost:4321
 
-pnpm test
+pnpm build
 ```
 
 [Langdev Team Blog]: https://blog.langdev.org
