@@ -1,10 +1,8 @@
 ---
 import '../global.css'
 
-const {
-  title,
-  canonical = Astro.site && new URL(Astro.url.pathname, Astro.site),
-} = Astro.props
+const { title } = Astro.props
+const canonical = new URL(Astro.url.pathname, Astro.site)
 ---
 
 <!doctype html>
@@ -13,7 +11,7 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
-    {canonical && <link rel="canonical" href={canonical} />}
+    <link rel="canonical" href={canonical} />
     <link rel="icon" href="/static/logo.svg" type="image/svg+xml" sizes="any" />
   </head>
   <body>
