@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
-    "astro": "7.1.5",
+    "astro": "7.2.8",
     "github-markdown-css": "^5.9.0"
   },
   "packageManager": "pnpm@11.17.0"
